@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box; /*lets include the border and padding as well to determine the width*/
+
+  /* set overall font */
+  font-size: 1.3rem;
+  font-family: "Sora", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* always border-box - easier to calculate */
+}
+
+body {
+  /*some browsers have padding some margins */
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  /*set the navbar to displat flex row and center */
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none; /* remove horrible ul style */
+  gap: 3%;
+  justify-content: center;
+
+  /* set the margin to 0px so that navbar starts from the top of the page
+  padding 20px so that the gray backgorund would take more space and not only
+  the height of the text inside navbar */
+  background-color: gray;
+  padding: 20px;
+  margin: 0px;
+}
+
+/* remove the decoration and blue color from links */
+a {
+  color: white;
+  text-decoration: none;
+}
